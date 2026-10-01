@@ -1,7 +1,6 @@
 # Bitácora de auditoría — AstroBitácora
 
-**Estudiante:** _(escribe tu nombre completo)_
-**Repositorio:** https://github.com/bryanflores764/Practiaca-05
+**Estudiante:** _(bryan Ronaldo flores aviles)_
 **URL publicada:** https://practiaca-05.vercel.app
 **Fecha:** 1 de octubre de 2026
 
