@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="AstroBitácora: una experiencia visual para explorar objetos del cielo profundo.">
   <title>AstroBitácora | Exploración del cielo profundo</title>
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
   <link rel="stylesheet" href="styles.css">
-  <!-- Intencional para la práctica: este script NO usa defer. -->
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -29,8 +29,15 @@
 
   <main id="inicio">
     <section class="hero" aria-labelledby="hero-title">
-      <!-- Intencional para la práctica: JPEG grande, sin width/height y sin formato moderno. -->
-      <img class="hero__image" src="https://res.cloudinary.com/dkeu1rgrm/image/upload/v1789676499/hero-cosmos_11zon_uqgf6b.jpg" alt="Campo estelar con una nebulosa azul y violeta">
+      <img class="hero__image"
+        src="https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_1600/v1789676499/hero-cosmos_11zon_uqgf6b.jpg"
+        srcset="https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_800/v1789676499/hero-cosmos_11zon_uqgf6b.jpg 800w,
+                https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_1200/v1789676499/hero-cosmos_11zon_uqgf6b.jpg 1200w,
+                https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_1600/v1789676499/hero-cosmos_11zon_uqgf6b.jpg 1600w"
+        sizes="100vw"
+        width="1600" height="900"
+        fetchpriority="high"
+        alt="Campo estelar con una nebulosa azul y violeta">
       <div class="hero__overlay"></div>
       <div class="hero__content">
         <p class="eyebrow">Diario de observación · Edición 07</p>
@@ -60,7 +67,12 @@
 
       <div class="grid">
         <article class="card card--wide">
-          <img src="https://res.cloudinary.com/dkeu1rgrm/image/upload/v1789673889/andromeda_yw826t.jpg" alt="Representación artística de una galaxia espiral">
+          <img src="https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_1200/v1789673889/andromeda_yw826t.jpg"
+            srcset="https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_800/v1789673889/andromeda_yw826t.jpg 800w,
+                    https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_1200/v1789673889/andromeda_yw826t.jpg 1200w"
+            sizes="(max-width: 760px) 90vw, 1180px"
+            width="1200" height="675" loading="lazy" decoding="async"
+            alt="Representación artística de una galaxia espiral">
           <div class="card__body">
             <span class="tag">Galaxia</span>
             <h3>Andrómeda</h3>
@@ -69,7 +81,12 @@
         </article>
 
         <article class="card">
-          <img src="https://res.cloudinary.com/dkeu1rgrm/image/upload/v1789673891/orion_kfemi7.jpg" alt="Nebulosa luminosa entre estrellas">
+          <img src="https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_800/v1789673891/orion_kfemi7.jpg"
+            srcset="https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_600/v1789673891/orion_kfemi7.jpg 600w,
+                    https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_900/v1789673891/orion_kfemi7.jpg 900w"
+            sizes="(max-width: 760px) 90vw, 580px"
+            width="800" height="600" loading="lazy" decoding="async"
+            alt="Nebulosa luminosa entre estrellas">
           <div class="card__body">
             <span class="tag">Nebulosa</span>
             <h3>Región de Orión</h3>
@@ -78,7 +95,12 @@
         </article>
 
         <article class="card">
-          <img src="https://res.cloudinary.com/dkeu1rgrm/image/upload/v1789673886/lunar-horizon_cu8glp.jpg" alt="Planeta suspendido sobre un fondo de estrellas">
+          <img src="https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_800/v1789673886/lunar-horizon_cu8glp.jpg"
+            srcset="https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_600/v1789673886/lunar-horizon_cu8glp.jpg 600w,
+                    https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_900/v1789673886/lunar-horizon_cu8glp.jpg 900w"
+            sizes="(max-width: 760px) 90vw, 580px"
+            width="800" height="600" loading="lazy" decoding="async"
+            alt="Planeta suspendido sobre un fondo de estrellas">
           <div class="card__body">
             <span class="tag">Sistema local</span>
             <h3>Horizonte lunar</h3>
@@ -87,7 +109,12 @@
         </article>
 
         <article class="card">
-          <img src="https://res.cloudinary.com/dkeu1rgrm/image/upload/v1789673893/exoplanet_njwv79.jpg" alt="Exoplaneta iluminado por una estrella distante">
+          <img src="https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_800/v1789673893/exoplanet_njwv79.jpg"
+            srcset="https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_600/v1789673893/exoplanet_njwv79.jpg 600w,
+                    https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_900/v1789673893/exoplanet_njwv79.jpg 900w"
+            sizes="(max-width: 760px) 90vw, 580px"
+            width="800" height="600" loading="lazy" decoding="async"
+            alt="Exoplaneta iluminado por una estrella distante">
           <div class="card__body">
             <span class="tag">Exoplaneta</span>
             <h3>Mundo 51-b</h3>
@@ -96,7 +123,12 @@
         </article>
 
         <article class="card card--wide">
-          <img src="https://res.cloudinary.com/dkeu1rgrm/image/upload/v1789673886/deep-field_grr0me.jpg" alt="Campo profundo repleto de estrellas y galaxias">
+          <img src="https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_1200/v1789673886/deep-field_grr0me.jpg"
+            srcset="https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_800/v1789673886/deep-field_grr0me.jpg 800w,
+                    https://res.cloudinary.com/dkeu1rgrm/image/upload/f_auto,q_auto,w_1200/v1789673886/deep-field_grr0me.jpg 1200w"
+            sizes="(max-width: 760px) 90vw, 1180px"
+            width="1200" height="675" loading="lazy" decoding="async"
+            alt="Campo profundo repleto de estrellas y galaxias">
           <div class="card__body">
             <span class="tag">Campo profundo</span>
             <h3>La noche más antigua</h3>
